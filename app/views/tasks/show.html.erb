@@ -1,0 +1,9 @@
+<h1> <%= @task.title %></h1>
+<h2>details of the task</h2>
+<h3> <%= @task.details %></h3>
+<h3> <% if @task.completed? == false %>
+     <%= "this task is not completed yet!" %>
+     <% else %>
+     <%= "this task has been completed!"  %>
+     <% end %>
+</h3>
